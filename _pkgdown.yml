@@ -2,24 +2,26 @@ url: https://etc5523-2026.github.io/etc5523-assignment-4-tzhu0035-png/
 template:
   bootstrap: 5
   bslib:
-    primary: "#2F6F73"
-
+    primary: '#2F6F73'
 navbar:
   structure:
-    left: [intro, reference]
-    right: [search, github]
-
+    left:
+    - intro
+    - reference
+    right:
+    - search
+    - github
 reference:
-  - title: Match your day
-    contents:
-      - match_my_day
-      - compare_day
-  - title: Launch the app
-    contents:
-      - run_app
-  - title: Data
-    contents:
-      - atus_days
-      - day_types
-      - day_type_profiles
-      - activity_categories
+- title: Match your day
+  contents:
+  - match_my_day
+  - compare_day
+- title: Launch the app
+  contents: run_app
+- title: Data
+  contents:
+  - atus_days
+  - day_types
+  - day_type_profiles
+  - activity_categories
+
