@@ -1,10 +1,28 @@
 Package: dayalike
-Title: What the Package Does (One Line, Title Case)
+Title: Find the Type of Day That Looks Most Like Yours
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Tiansi", "Zhu", , "tzhu0035@student.monash.edu", role = c("aut", "cre"))
+Description: Groups the diary days of the 2025 American Time Use Survey into
+    eight day types and compares your own day with them. Includes the
+    prepared survey data, functions to match and compare a day, and an
+    interactive Shiny app.
 License: MIT + file LICENSE
+URL: https://etc5523-2026.github.io/etc5523-assignment-4-tzhu0035-png/
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 8.1.0
+Depends: 
+    R (>= 3.5)
+LazyData: true
+Imports: 
+    bslib,
+    dplyr,
+    ggplot2,
+    shiny,
+    tibble
+Config/roxygen2/version: 8.1.0
+Suggests: 
+    knitr,
+    rmarkdown,
+    tidyr
+VignetteBuilder: knitr

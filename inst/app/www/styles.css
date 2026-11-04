@@ -1,0 +1,68 @@
+.intro {
+  max-width: 760px;
+  margin-bottom: 1rem;
+}
+
+.about {
+  margin: 1.5rem auto;
+}
+
+.help-text {
+  color: #52606D;
+  font-size: 0.85rem;
+}
+
+.warning-text {
+  color: #8A4B08;
+  background: #FFF4E5;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.total-box {
+  font-weight: 600;
+  background: #EAF2F2;
+  border-radius: 6px;
+  padding: 0.6rem 0.75rem;
+}
+
+.headline-card {
+  border-left: 6px solid #D1495B;
+}
+
+.headline-card.no-match {
+  border-left-color: #8A4B08;
+}
+
+.headline-card h2 {
+  color: #D1495B;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.headline-card.no-match h2 {
+  color: #8A4B08;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+  color: #52606D;
+  margin-bottom: 0;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.who {
+  color: #3E4C59;
+}
+
+.shiny-output-error-validation {
+  color: #8A4B08;
+  font-weight: 600;
+}
