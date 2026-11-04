@@ -1,0 +1,78 @@
+# dayalike: Whose Day Is It?
+
+**Which kind of day did you have, and what makes it that kind of day?**
+
+`dayalike` compares one day of your time use with eight types of day
+found in the diaries of 6,146 people in the 2025 American Time Use
+Survey. It is for anyone curious about how they spend their time. The
+package includes:
+
+- an interactive Shiny app, launched with
+  [`run_app()`](https://etc5523-2026.github.io/etc5523-assignment-4-tzhu0035-png/reference/run_app.md);
+- [`match_my_day()`](https://etc5523-2026.github.io/etc5523-assignment-4-tzhu0035-png/reference/match_my_day.md),
+  which ranks the eight day types by how close they are to your day;
+- [`compare_day()`](https://etc5523-2026.github.io/etc5523-assignment-4-tzhu0035-png/reference/compare_day.md),
+  which shows which activities make your day similar to, or different
+  from, a type;
+- the prepared survey data: `atus_days`, `day_types`,
+  `day_type_profiles` and `activity_categories`.
+
+Documentation website:
+<https://etc5523-2026.github.io/etc5523-assignment-4-tzhu0035-png/>
+
+## Installation
+
+``` r
+
+# install.packages("remotes")
+remotes::install_github("ETC5523-2026/etc5523-assignment-4-tzhu0035-png")
+```
+
+## Launch the app
+
+``` r
+
+library(dayalike)
+run_app()
+```
+
+Enter the hours you spent on each activity during one day, or start from
+an example day. The app shows the type your day looks most like, which
+activities explain the match, and how close every other type is.
+
+## Use the functions
+
+``` r
+
+my_day <- c(sleep = 7.5, personal_care = 1, eating = 1, work = 9,
+            housework = 1, screen = 2.5, travel = 1.5, exercise = 0.5)
+
+match_my_day(my_day)
+compare_day(my_day, "Work day")
+```
+
+See
+[`vignette("dayalike")`](https://etc5523-2026.github.io/etc5523-assignment-4-tzhu0035-png/articles/dayalike.md)
+for a full guide to the app and how to read its results.
+
+## Data
+
+The data come from the U.S. Bureau of Labor Statistics, *American Time
+Use Survey 2025*, Activity Summary file
+(<https://www.bls.gov/tus/data/datafiles-2025.htm>). BLS data are in the
+public domain. The original file is kept in `data-raw/atussum-2025.zip`,
+and `data-raw/atus_days.R` turns it into the package data: it groups the
+detailed activities into 15 categories and groups the days into eight
+types with survey-weighted k-means clustering.
+
+## Generative AI declaration
+
+**Generative AI declaration:** I used AI tools in a limited, supporting
+role during this assignment. First, I asked AI to check whether my
+chosen topic met the assignment requirements, and I made the final
+decision on the topic myself. Second, when my code produced errors, I
+used AI to help identify the causes and suggest corrections; I reviewed,
+tested and understood each fix before including it in my work. Finally,
+I used AI to help clarify some concepts from class that I did not fully
+understand, as a supplement to the lecture materials. All design
+decisions, analysis and the final submission are my own work.
